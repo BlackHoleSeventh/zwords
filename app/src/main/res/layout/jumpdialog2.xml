@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="43dp"
+    android:layout_marginRight="43dp"
+    android:color="#00A1E7"
+    android:id="@+id/relativeLayout"
+    android:orientation="vertical">
+
+    <!--修改用户资料的dialog的弹窗-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="请输入"
+        android:background="#00A1E7"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="24sp"/>
+    <EditText
+        android:id="@+id/edit_content"
+        android:lines="1"
+        android:inputType="text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+        <!--是-->
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="188dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+        <!--否-->
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="188dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>
